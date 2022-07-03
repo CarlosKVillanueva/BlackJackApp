@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+<header class="titulo">BlackJack</header>
+
+<div class="row mb-3">
+    <div class="col text-center">
+        <button id="btnNuevo" class="btn btn-primary">Nuevo Juego</button>
+        <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir Carta</button>
+        <button id="btnDetener" disabled="disabled" class="btn btn-danger">Detener</button>
+
+        <div class="row container">
+            <div class="col">
+                <h1 class="mt-5 pb-2 text-white">Jugador 1: <small>0</small></h1>
+                <div id="jugador-cartas" class="mb-3 divCartasJugador">
+                </div>
+                <h1 class="mt-2 pb-2 text-white">IA: <small>0</small></h1>
+                <div id="ia-cartas" class="mb-3 divCartasJugador">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/underscore-min.js"></script>
+<script src="assets/js/juego-min.js"></script>
+
+<script>
+    modulo.nuevoJuego();
+</script>
+
+</body>
+</html>
